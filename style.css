@@ -1,0 +1,431 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    background-color: #f4f4fc;
+}
+
+header {
+    width: 100%;
+    height: 70px;
+}
+.logo{
+     width: 100px;
+     height: 50px;
+     padding-top: 20px;
+     padding-left: 40px;
+}
+
+main{
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenedorCajaTexto{
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    padding-left: 100;
+    width: 960px;
+    height: 600px;
+    }
+
+    .cajaDeTexto{
+        width: 80%;
+        height: 100%; 
+        border: none;
+        background-color: #f4f4fc;
+        cursor: pointer;
+        color: #0A3871;
+        font-size: 32px;
+        font-weight: 400px;
+        font-family: 'Inter', sans-serif;
+    }
+
+.cajaDeTexto::placeholder{
+        color: #0A3871;
+    }
+
+.alerta{
+    position: absolute;
+    top: 750px;
+    left: 300px;
+    display: flex;
+    color: #495057;
+}
+
+.contenedorBotones{
+    position: absolute;
+    top: 800px;
+    height: 80px;
+    padding-left: 15%;
+    padding-top: 15px;
+
+}
+
+.botonEncriptar{
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    background-color: #0A3871;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    border: none;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.botonDesencriptar{
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    background-color: #D8DFE8;
+    color: #0A3871;
+    font-size: 16px;
+    font-weight: 400px;
+    font-family: 'Inter', sans-serif;
+    border: 1px solid #0A3871;
+    cursor: pointer;
+}
+
+.seccion2{
+    display: block;
+    position: relative;
+    width: 345px;
+    height: 1080px;
+    right: 150px;
+    padding-right: 100px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    border-radius: 32px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.50);
+}
+
+.contenedorToys{
+    position: relative;
+    top: 100px;
+    box-sizing: border-box;
+    padding-top: 50px;
+   
+
+}
+
+.toys{
+    width: 350px;
+}
+
+.contenedorParrafo{
+    position: absolute;
+    box-sizing: border-box;
+    top: 570px;
+    left: 40px;
+}
+
+.contenedorParrafo h3{ 
+    font-size: 24px;
+    font-weight: 700;
+    font-family:'Inter', sans-serif ;
+    text-align: center;
+    color: #343A40;
+    }
+
+.contenedorParrafo p{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #495057;
+    padding-top: 20px;
+}
+
+.contenedorResultado{
+    position: absolute;
+    bottom: 410px;
+    width: 320px;
+    height: 450px;
+    padding: 0;
+    box-sizing: border-box;
+    margin-left: 25px;
+}
+
+.contenedorResultado p{
+    color: #495057;
+    font-size: 25px;
+}
+
+.contenedorBotonCopiar{
+    display: flex;
+    position: absolute;
+    bottom: 400px;
+    top: 700px;
+    padding-left: 40px;
+}
+
+.btnCopiar{
+    width: 300px;
+    height: 67px;
+    border-radius: 24px;
+    background-color: #ffffff;
+    color: #0A3871;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'Inter', sans-serif;
+    border: 1px solid #0A3871;
+    cursor: pointer;
+    position: relative;
+    top: 100px;
+    right: 15px;
+}
+
+.ocultar{
+    display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+    header{
+        width: auto;
+        height: auto;
+    }
+    main{
+        width: auto;
+        height: auto;
+    }
+    .seccion1{
+        width: none;
+        height: none ;
+    }
+
+    .logo{
+        position: relative;
+        margin: 20px;
+        width: auto;
+        height: auto;
+        padding: 20px;
+        left: -10px;
+    }
+    .contenedorCajaTexto {   
+        top: auto;
+        margin: 10px;
+        width: auto;
+        height: auto;
+        left: 40px;
+    }
+    .contenedorCajaTexto textarea {
+        width: 670px;
+        height: 200px;  
+    }
+
+    .alerta{
+        display: flex;
+        width: 635px;
+        height: 100px;
+        top: 299px;
+        left: 30px;
+        padding: 10px;
+        font-size: 24px;
+
+    }
+    .alertaImg{
+        position: relative;
+        width: 30px;
+        height: 25px;
+        margin: 20px;
+        top: -20px;
+    }
+    
+    .seccion2{
+        position: fixed;
+        width: 650px;
+        height: 300px;
+        left: 50px;
+        top: 750px;
+    }
+    .contenedorParrafo{
+        left: 100px;
+    }
+
+    .contenedorParrafo h3 {
+        position: fixed;
+        top: 850px;
+        font-size: 35px;
+    }
+    .contenedorParrafo p {
+        position: fixed;
+        top: 950px;
+        font-size: 30px;
+    }
+    .contenedorBotones {
+        position: relative;
+        top: 400px;
+        height: 100px;
+        width: auto;
+        left: -30px
+    }
+
+    .botonDesencriptar{
+        width: 600px;
+    }
+
+    .botonEncriptar{
+        width: 600px;
+    }
+
+    .btnCopiar{
+        position: fixed;
+        height: 70px;
+        width: 600px;
+        top: 1100px;
+        left: 70px;
+    }
+
+    .contenedorBotonCopiar{
+        pad: 50px;
+        top: 1001px;
+        left: 40px;
+        border-radius: 32px;
+    }
+
+    .toys { 
+       visibility: hidden;
+    } 
+
+    .contenedorToys{
+        visibility: hidden;
+    }
+
+    .contenedorResultado p{
+        position: fixed;
+        width: 600px;
+        height: 500px;
+        top: 800px;
+        font-size: 32px;
+    }
+  
+    .ocultar{
+        display: none;
+    }
+}
+
+
+@media screen and  (max-width: 375px){
+    header{
+        width: auto;
+        height: auto;
+    }
+    .seccion1{
+        width: none;
+        height: none;
+    }
+    .logo{
+        position: fixed;
+        padding: 30px;
+        height: 100px;
+        width: 100px;
+        top: -30px;
+        left: -40px;
+    }
+    .contenedorCajaTexto{
+        width: auto;
+        height: auto;
+        top: 140px;
+        margin: 30px;
+    }
+
+    .contenedorCajaTexto textarea{
+        position: fixed;
+        width: 330px;
+        height: 70px;
+        font-size: 24px;
+        left: 20px;
+    }
+   
+    .alerta{
+        position: fixed;
+        left: -15px;
+        top: 320px;
+        font-size: 15px;
+        width: auto;
+
+    }
+
+    .contenedorBotones {
+        display: inline-block;
+        font-size: 24px;
+        left: 30px;
+        top: 400px;
+        padding: 10px 0 0 10px;
+        width: 300px;
+        height: auto;
+    }
+
+    .botonDesencriptar {
+        width: 300px;
+        height: 50px;
+        font-size: 15px;
+    }
+
+    .botonEncriptar{
+        width: 300px;
+        height: 50px;
+        font-size: 17px;
+    }
+    .seccion2{
+        position: fixed;
+        width: 300px;
+        height: 200px;
+        left: 45px;
+        border-radius: 10px;
+        top: 550px;
+    }   
+
+    .contenedorParrafo h3{
+        position: fixed;
+        top: 570px;
+        left: 80px;
+    }
+
+    .contenedorParrafo p{
+        position: fixed;
+        top: 650px;
+        left: 60px;
+    }
+
+    .contenedorParrafo h3 {
+        font-size: 20px;
+    }
+
+    .contenedorParrafo p{
+        font-size: 20px;
+    }
+
+    .contenedorResultado p{
+        width: 250px;
+        height: 250px;
+        font-size: 50px;
+
+    }
+
+    .btnCopiar{
+        position: fixed;
+        width: 300px;
+        height: 60px;
+        top: 800px;
+        left: 50px;
+
+    }
+
+    .ocultar{
+        display: none;
+    }
+
+
+}
